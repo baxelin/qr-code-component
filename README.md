@@ -15,7 +15,7 @@ A simples QR Code Card to practice HTML and CSS.
 
 ### Screenshot
 
-![Screenshot](images/screenshot.png)
+![Screenshot](screenshot/screenshot.png)
 
 
 ### Built with
