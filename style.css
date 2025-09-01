@@ -1,11 +1,29 @@
+:root {
+    --color-bg: hsl(212, 45%, 89%);
+    --color-p: hsl(216, 15%, 48%);
+    --color-heading: hsl(218, 44%, 22%);
+
+    --main-font: 1rem;
+
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: hsl(212, 45%, 89%);
-    margin: 0;
-    min-height: 100vh;
+    background-color: var(--color-bg);
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     font-family: "Outfit";
+    font-size: var(--main-font);
+    line-height: 1.5;
 }
 
 main {
@@ -13,12 +31,12 @@ main {
     max-width: 320px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 1rem;
+    padding: var(--space-2);
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    gap: 1rem;
 }
 
 img {
@@ -27,13 +45,16 @@ img {
 }
 
 h1 {
-    width: 90%;
-    font-size: 1.5em;
-    color: hsl(218, 44%, 22%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-heading);
 }
 
 p {
-    width: 90%;
-    font-size: 1em;
-    color: hsl(216, 15%, 48%);
+    font-size: 1rem;
+    color: var(--color-p);
+}
+
+h1, p {
+    max-width: 60ch;
 }
